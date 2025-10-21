@@ -1,1 +1,32 @@
+class Cliente:
+    def __int__(self,nombre, cedula, saldo=0.0, historial=[]):
+     self.nombre =nombre
+     self.cedula =cedula
+     self.saldo =saldo
+     self.historial = historial
 
+    def comprar(self, producto, fecha):
+        if self.saldo > producto.precio:
+            self.saldo -= producto.precio
+            self.historial.append(producto)
+class Producto:
+    def __int__(self, nombre, precio):
+     self.nombre = nombre
+     self.precio = precio
+     self.saldo = saldo
+c1= Cliente( nombre = "Juan", cedula = "123", saldo = 100)
+p1= Producto(nombre="jugo",precio=5)
+p2= Producto(nombre="cafe", precio=5)
+p3= Producto(nombre="pan", precio=5) 
+c1.comprar(p1)
+c1.comprar(p2)
+c1.comprar(p3)
+c1.comprar(p1)
+c1.comprar(p2)
+c1.comprar(p3)
+c1.comprar(p1)
+for p in 
+c1.historial[0].nombre
+len(c1.historial)
+c1.comprar(p1)
+  print(c1.saldo)
